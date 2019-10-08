@@ -1,0 +1,14 @@
+C:\vs\api-ciscocdr\api-ciscocdr\obj\Debug\netcoreapp2.2\api-ciscocdr.csproj.CoreCompileInputs.cache
+C:\vs\api-ciscocdr\api-ciscocdr\obj\Debug\netcoreapp2.2\api-ciscocdr.AssemblyInfoInputs.cache
+C:\vs\api-ciscocdr\api-ciscocdr\obj\Debug\netcoreapp2.2\api-ciscocdr.AssemblyInfo.cs
+C:\vs\api-ciscocdr\api-ciscocdr\bin\Debug\netcoreapp2.2\api-ciscocdr.deps.json
+C:\vs\api-ciscocdr\api-ciscocdr\bin\Debug\netcoreapp2.2\api-ciscocdr.runtimeconfig.json
+C:\vs\api-ciscocdr\api-ciscocdr\bin\Debug\netcoreapp2.2\api-ciscocdr.runtimeconfig.dev.json
+C:\vs\api-ciscocdr\api-ciscocdr\bin\Debug\netcoreapp2.2\api-ciscocdr.dll
+C:\vs\api-ciscocdr\api-ciscocdr\bin\Debug\netcoreapp2.2\api-ciscocdr.pdb
+C:\vs\api-ciscocdr\api-ciscocdr\obj\Debug\netcoreapp2.2\api-ciscocdr.csprojAssemblyReference.cache
+C:\vs\api-ciscocdr\api-ciscocdr\obj\Debug\netcoreapp2.2\api-ciscocdr.RazorAssemblyInfo.cache
+C:\vs\api-ciscocdr\api-ciscocdr\obj\Debug\netcoreapp2.2\api-ciscocdr.RazorAssemblyInfo.cs
+C:\vs\api-ciscocdr\api-ciscocdr\obj\Debug\netcoreapp2.2\api-ciscocdr.RazorTargetAssemblyInfo.cache
+C:\vs\api-ciscocdr\api-ciscocdr\obj\Debug\netcoreapp2.2\api-ciscocdr.dll
+C:\vs\api-ciscocdr\api-ciscocdr\obj\Debug\netcoreapp2.2\api-ciscocdr.pdb

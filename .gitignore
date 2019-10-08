@@ -4,3 +4,4 @@
 /.vs/api-ciscocdr/v16/Server/sqlite3/storage.ide-shm
 /.vs/api-ciscocdr/v16/Server/sqlite3/storage.ide-wal
 /api-ciscocdr/appsettings.Development.json
+bin

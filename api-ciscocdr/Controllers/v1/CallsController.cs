@@ -49,8 +49,8 @@ public class CallsController : ControllerBase
         }
 
         var results = calls
-            .Take(take)
             .Skip(skip)
+            .Take(take)
             .OrderByDescending(c => c.DateTimeDisconnect);
 
         return Ok(results);

@@ -4,10 +4,10 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
 WORKDIR /src
-COPY ["api-ciscocdr/api-ciscocdr.csproj", "api-ciscocdr/"]
+COPY ["api-ciscocdr.csproj", "api-ciscocdr/"]
 RUN dotnet restore "api-ciscocdr/api-ciscocdr.csproj"
 COPY . .
-WORKDIR "/src/api-ciscocdr"
+WORKDIR "/src"
 RUN dotnet build "api-ciscocdr.csproj" -c Release -o /app
 
 FROM build AS publish
