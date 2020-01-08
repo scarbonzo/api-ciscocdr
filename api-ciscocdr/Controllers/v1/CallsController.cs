@@ -15,9 +15,9 @@ public class CallsController : ControllerBase
         _context = context;
     }
 
-    public IActionResult Get(DateTime? Start = null, DateTime? End = null, string Number = null, string Device = null, string Cause = null, int take = 10, int skip = 0)
+    public IActionResult Get(DateTime? Start = null, DateTime? End = null, string Number = null, string Device = null, string Cause = null, int take = 25, int skip = 0)
     {
-        if(Start == null)
+        if (Start == null)
         {
             Start = DateTime.Now.Date;
         }
@@ -49,9 +49,22 @@ public class CallsController : ControllerBase
         }
 
         var results = calls
-            .Skip(skip)
-            .Take(take)
-            .OrderByDescending(c => c.DateTimeDisconnect);
+           .Skip(skip)
+           .Take(take)
+           .OrderByDescending(c => c.DateTimeDisconnect)
+           .ToList();
+
+        foreach(var c in results)
+        {
+            var timeZoneIds = TimeZoneInfo.GetSystemTimeZones().Select(t => t.Id);
+
+            c.DateTimeDisconnect = TimeZoneInfo.ConvertTime(c.DateTimeDisconnect, TimeZoneInfo.FindSystemTimeZoneById(@"UTC"), TimeZoneInfo.FindSystemTimeZoneById(@"America/New_York"));
+            try
+            {
+                c.DateTimeConnect = c.DateTimeDisconnect.AddSeconds(-Int32.Parse(c.Duration)).ToString();
+            }
+            catch { }
+        }
 
         return Ok(results);
     }
